@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 bg-info justify-content-center" >
+                <img src="../Images/logo.PNG" alt="">
+            </div>
+            <div class="col-md-10 text-center bg-info">
+                <h3>BỘ CÔNG THƯƠNG</h3>
+                <h3>TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h3>
+                <h4 class="text-danger">Đổi mới, nâng tầm cao mới - Năng động, hội nhập toàn cầu</h4>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-md col-md-12 d-flex">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Đăng nhập</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="btnDK">Đăng ký</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-8 container-fluid" >
+                <section>
+                    <div class="text-center">
+                        <h1>DANH SÁCH ĐĂNG KÝ LÀM CĂN CƯỚC SINH VIÊN</h1>
+                    <h1>TRƯỜNG DHCN THÀNH PHỐ HỒ CHÍ MINH</h1>
+                    </div>
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <tr>
+                            <th>
+                                <tr>
+                                    <td>STT</td>
+                                    <td>Họ tên</td>
+                                    <td>SCMND cũ</td>
+                                    <td>Quê quán</td>
+                                    <td>Email</td>
+                                    <td>Điện thoại</td>
+                                    <td>Ảnh đại diện</td>
+                                </tr>
+                            </th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nguyễn Công Chính</td>
+                                <td>212692772</td>
+                                <td>Bình Định</td>
+                                <td>duonghoainam@gmail.com</td>
+                                <td>0989-888-777</td>
+                                <td>AnhMoi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <footer class="col-md-12 text-center">
+               
+                <p>SVTH: NGÔ TẤN ĐẠT || MÃ SINH VIÊN: 20015181 ||</p>
+            </footer>
+        </div>
+        <div class="modal fade" role="dialog" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        THÔNG TIN CÁ NHÂN
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-horizontal" method="get">
+                            <div class="form-group">
+                                <label for="lblTen">Họ tên</label>
+                                <input type="text" name="txtTen" id="txtTen" class="form-control" placeholder="Nhập họ tên">
+                                <span class="text-danger" id="tbTen" style="color: red;">*</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lblCMND">SCMND cũ</label>
+                                <input type="text" name="txtCMND" id="txtCMND" class="form-control" placeholder="Nhập CMND cũ">
+                                <span class="text-danger" id="tbCMND" style="color: red;">*</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lblQueQuan">Quê quán</label>
+                                <input type="text" name="txtQueQuan" id="txtQueQuan" class="form-control" placeholder="Nhập tỉnh của bạn">
+                                <span class="text-danger" id="tbQQ" style="color: red;">*</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lblEmail">Email</label>
+                                <input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Nhập email của bạn">
+                                <span class="text-danger" id="tbEmail" style="color: red;">*</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lblSDT">Số điện thoại</label>
+                                <input type="text" name="txtSDT" id="txtSDT" class="form-control" placeholder="XXXX-XXX-XXX">
+                                <span class="text-danger" id="tbSDT" style="color: red;">*</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lblADD">Ảnh đại diện</label>
+                                <input type="file" name="ADD" id="ADD" class="form-control" placeholder="No file chosen">
+                                <span class="text-danger" id="tbADD" style="color: red;">*</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="submit" id="btnSubDK" class="btn btn-primary">Lưu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
